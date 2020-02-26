@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Google</title>
+        <style>
+            body {
+                font-family: arial,sans-serif;
+            }
+            a {
+                text-decoration: none;
+            }
+            input, img {
+                display: block;
+                margin:auto;
+            }
+            .background-img {
+                background-image: url('//ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+                background-size: 528px 68px;
+                background-repeat: no-repeat;
+            }
+            .google-apps-icon {
+                background-position: -132px -38px;
+                height: 30px;
+                width: 30px;
+                opacity: .55;
+                display: inline-block;
+            }
+            .gmail-n-stuff {
+                position: relative;
+            }
+            .account-icon {
+                background-image: url('https://lh3.googleusercontent.com/-ITYCtIPiS6Q/AAAAAAAAAAI/AAAAAAAAAAA/AKF05nC5mU7w_2PZvHd1mfNSZOIprCTgow.CMID/s32-c/photo.jpg');
+                background-size: 32px 32px;
+                border-radius: 50%;
+                display: block;
+                margin: -1px;
+                overflow: hidden;
+                position: relative;
+                height: 32px;
+                width: 32px;
+                z-index: 0;
+            }
+            .header-stuff {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                font-size: 13px;
+                margin: 16px;
+            }
+            #general-buttons {
+                display: inline-block;
+                padding-left: 4px;
+                margin-top: 8px;
+            }
+            .gb {
+                padding-right: 14px;
+            }
+            #gmail-n-stuff {
+                display: flex;
+                min-width: 220px;
+                padding-left: 30px;
+                padding-right: 10px;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            .gs {
+                padding: 0 10px;
+            }
+            .main-img {
+                padding-top: 94px;
+                padding-bottom: 27px;
+            }
+            #search-form {
+                display: flex;
+                width: 584px;
+                justify-content: center;
+                margin:auto;
+                box-shadow: none;
+                border-radius: 24px;
+                background: #fff;
+                border: 1px solid #dfe1e5;
+                height: 42px;
+                margin: 0 auto;
+            }
+            #search-thing {
+                
+                width:582px;
+                background-color:transparent;
+                border: none;
+                
+            }
+            label {
+                position: relative;
+            }
+
+            label:before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 20px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+            }
+            #search-label {
+                display: flex;
+                margin-top: 15px;
+                color:
+                #9AA0A6;
+                height: 15px;
+                width: 15px;
+                align-items: center;
+                fill: currentColor;
+                margin-left: 5px;
+                padding-right: 25px;
+            }
+            #buttons-yo {
+                display: flex;
+                margin:auto;
+                width: 571px;
+                height: 70px;
+                justify-content: center;
+                padding-top: 12px;
+            }
+            .the-btns {
+                background-color:
+                    #f2f2f2;
+                    border: 1px solid
+                    #f2f2f2;
+                    border-radius: 4px;
+                    color:
+                    #5F6368;
+                    font-family: arial,sans-serif;
+                    font-size: 14px;
+                    margin: 11px 4px;
+                    padding: 0 16px;
+                    line-height: 27px;
+                    height: 36px;
+                    min-width: 54px;
+                    text-align: center;
+                    cursor: pointer;
+                    user-select: none;
+            }
+            footer {
+                position: absolute;
+                width:auto;
+                bottom: 0px;
+                left:0;
+                right:0;
+            }
+            #footer-bar {
+                display:flex;
+                justify-content: space-between;
+                background:#f2f2f2;
+                line-height: 40px;
+                
+                border-top: 1px solid #e4e4e4;
+                max-width: auto;
+                
+            }
+            .first-three, .second-three {
+                
+                font-size: 13px;
+                color: #5f6368;
+            }
+            .first-three {
+                margin-left: 30px;
+            }
+            .second-three {
+                margin-right: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="viewport">
+            <div class="header-stuff">
+                <div id="general-buttons">
+                    <a class="gb" href="#">About</a>
+                    <a class="gb" href="#">Store</a>
+                </div>
+                <div id="gmail-n-stuff">
+                    <a class="gs" href="#">Gmail</a>
+                    <a class="gs" href="#">Images</a>
+                    <a class="google-apps-icon background-img gs" tabindex="0" role="button" href="https://www.google.com/intl/en/about/products?tab=wh" title="Google Apps"></a>
+                    <a class="background-img account-icon " title="Google Account"></a>
+            </div>
+            </div>
+            <div class="main-stuff">
+                <div>
+                    <img class="main-img" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google" width="272" height="92">
+                </div>
+                <form id="search-form" action="/search" style="overflow: visible">
+                    <label id="search-label"></label>
+                    <input id="search-thing" type="text" maxlength="2048" title="search">
+                    
+                </form>
+                <form id="buttons-yo" action="button" >
+                    <input class="the-btns" id="search-btn" type="submit" value="Google Search">
+                    <input class="the-btns" id="lucky-btn" type="submit" value="I'm Feeling Lucky">
+                </form>
+
+                <footer>
+                    <div id="footer-bar">
+                        <div >
+                            <a class="first-three" href="#">Advertising</a>
+                            <a class="first-three" href="#">Business</a>
+                            <a class="first-three" href="#">How Search works</a>
+                        </div>
+                        <div id="2nd-three">
+                            <a class="second-three" href="#">Privacy</a>
+                            <a class="second-three" href="#">Terms</a>
+                            <a class="second-three" href="#">Settings</a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
