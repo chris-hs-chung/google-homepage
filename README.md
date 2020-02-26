@@ -3,4 +3,3 @@ From The Odin Project's [curriculum](http://www.theodinproject.com/courses/web-d
 The project is to make a webpage that looks like Google's iconic search site. I will have demonstrated using basic html and css and pushing the project into Github.
 
 See the website [here](https://chris-hs-chung.github.io/google-homepage)
-
